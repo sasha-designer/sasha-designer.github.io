@@ -7,8 +7,17 @@
 }
 
 .header {
-	background: $color-white;
-	padding: 3rem 0;
+	background: url(../images/background.jpg) no-repeat;
+	background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+	// padding: 3rem 0;
+}
+
+.header .container  {
+	margin: -37.5% 0;
 }
 
 .logo {
@@ -50,7 +59,7 @@
 .intro {
 	@media (min-width: $breakpoint-medium) {
 		p {
-			font-size: 2.7rem;
+			font-size: 5.7rem;
 			max-width: 66.66666%;
 		}
 	}
