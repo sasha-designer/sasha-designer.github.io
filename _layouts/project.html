@@ -17,8 +17,11 @@
 					<h1>
 						{{ page.project.title }}
 					</h1>
-					<span class="h2">Content</span>
+					<span class="h2">What I thought</span>
 					{{ page.content }}
+
+					<span class="h2">Process</span>
+						<p>{{ page.process.process }}</p>
 					<div class="project-meta">
 						<span class="h2">Flowers</span>
 						<p>{{ page.project.flowers }}</p>
@@ -33,6 +36,7 @@
 						{% for image in page.images %}
 						<li>
 							<img src="{{ image.url | prepend: site.baseurl }}" alt="{{ image.alt }}" />
+							<p> {{ image.description }} </p>
 						</li>
 						{% endfor %}
 					</ul>
